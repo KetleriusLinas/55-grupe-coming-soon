@@ -9,44 +9,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
-}
-
-.row-short {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 600px;
-}
-.header > .row-short{
-    gap: 20px;
-}
-
-.collumn {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50%;
-}
-
-.collumn+.collumn {
-    width: 40%;
-
-}
-
 .bg-blue {
     background-color: #03a9f5;
 }
@@ -54,12 +16,35 @@ body {
 .logo {
     height: 40px;
 }
+.main-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000;
+}
+.main-description {
+    font-size: 22px;
+    color: #ccc;
+}
+.section-title {
+    font-size: 25px;
+    color: #000;
+}
+.section-description {
+    font-size: 17px;
+    line-height: 25px;
+    color: #555;
+}
+.section-description > a {
+    color: #EB1e61;
+    text-decoration: none;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.7);
+}
 .logo-white {
     height: 60px;
     margin-bottom: 30px;
-}
-footer {
-    color: rgba(255, 255, 255, 0.7);
 }
 footer a {
     color: #fff;
@@ -67,42 +52,20 @@ footer a {
 
 .text-trio {
     display: flex;
-    gap: 30px
-}
-
-@media (max-width: 1100px) {
-    .row {
-        width: 800px;
-    }
-}
-
-@media (max-width: 900px) {
-    .row {
-        width: 600px;
-    }
+    gap: 0 30px
 }
 
 @media (max-width: 700px) {
-    .row {
-        width: 400px;
-    }
-
-    .row-short {
-        width: 400px;
+    .text-trio {
+        flex-direction: column;
     }
 }
 
-@media (max-width: 500px) {
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .row {
+    /* .row {
         width: 100%;
     }
 
     .row-short {
         width: 100%;
     }
-}
+} */
