@@ -21,7 +21,7 @@ Design: ![alt text](./project-design.png)
 -   Css animations
 -   HTML forms
 -   background image
-
+-   CSS custom properties (aka variables)
 ## 🧰 Getting Started
 
 ### 💻 Prerequisites
