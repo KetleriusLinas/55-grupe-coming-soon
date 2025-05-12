@@ -1,13 +1,3 @@
-body,
-body * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 .bg-blue {
     background-color: #03a9f5;
@@ -16,25 +6,30 @@ body {
 .logo {
     height: 40px;
 }
+
 .main-title {
     font-size: 50px;
     text-transform: uppercase;
     color: #000;
 }
+
 .main-description {
     font-size: 22px;
     color: #ccc;
 }
+
 .section-title {
     font-size: 25px;
     color: #000;
 }
+
 .section-description {
     font-size: 17px;
     line-height: 25px;
     color: #555;
 }
-.section-description > a {
+
+.section-description>a {
     color: #EB1e61;
     text-decoration: none;
 }
@@ -42,12 +37,43 @@ body {
 footer {
     color: rgba(255, 255, 255, 0.7);
 }
+
 .logo-white {
     height: 60px;
     margin-bottom: 30px;
 }
+
 footer a {
     color: #fff;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.socials a {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #fff0;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.socials a:hover {
+    background-color: #fff;
+    color: blue;
 }
 
 .text-trio {
@@ -61,11 +87,10 @@ footer a {
     }
 }
 
-    /* .row {
+/* .row {
         width: 100%;
     }
 
     .row-short {
         width: 100%;
-    }
-} */
+    } */
