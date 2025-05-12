@@ -1,14 +1,14 @@
-
 .bg-blue {
     background-color: #03a9f5;
 }
 
 .hero {
-    background-image: url(../../img/hero-background.jpeg);
-    background-position: center;
+    background-image: url(../../img/hero-small.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
     justify-content: center;
-    /* background-attachment: fixed ; */
 }
 
 .logo {
