@@ -3,12 +3,14 @@
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    text-align: left;
 }
 
 .form .form-row {
     display: flex;
     gap: 2rem;
     width: 100%;
+    justify-content: flex-end; 
 }
 
 .form .form-group {
@@ -19,20 +21,52 @@
 }
 
 .form label {
+    width: 100%;
     font-size: 0.8rem;
     text-transform: uppercase;
 }
 
 .form input {
+    width: 100%;
     font-size: 1.2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+
 }
 
 .form textarea {
-    
+    resize: vertical;
+    width: 100%;
+    min-height: 4rem;
+    height: 5.5rem;
+    max-height: 16rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.form ::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .form button {
+    font-size: 1rem;
+    line-height: 1em;
+    padding: 1em;
+    background-color: #EB1e61;
+    border: none;
+    color: #fff;
+    box-shadow: 0 0.2em 0.4em 0px #0006;
 
+}
+.form input:focus {
+    outline: none;
+}
+.form textarea:focus {
+    outline: none;
 }
