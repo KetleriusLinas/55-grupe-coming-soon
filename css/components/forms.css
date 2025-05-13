@@ -4,19 +4,20 @@
     gap: 1rem;
     width: 100%;
     text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .form .form-row {
     display: flex;
-    gap: 2rem;
-    width: 100%;
     justify-content: flex-end; 
+    gap: 1.5rem;
 }
 
 .form .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.5rem;
     width: 100%;
 }
 
@@ -49,6 +50,10 @@
     border: none;
     border-bottom: 2px solid #ccc;
 }
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+}
 
 .form ::placeholder {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -61,12 +66,5 @@
     background-color: #EB1e61;
     border: none;
     color: #fff;
-    box-shadow: 0 0.2em 0.4em 0px #0006;
-
-}
-.form input:focus {
-    outline: none;
-}
-.form textarea:focus {
-    outline: none;
+    box-shadow: 0 0.2em 0.4em #0006;
 }
