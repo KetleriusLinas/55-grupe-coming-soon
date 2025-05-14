@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .bg-blue {
     background-color: #03a9f5;
 }
 
 .hero {
     background-image: url(../../img/hero-small.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -29,14 +34,14 @@
 .hero .form-row {
     justify-content: center;
 }
+.hero label {
+    color: #fff;
+
+}
 .hero input {
     background-color: transparent;
     color: #fff;
-    border-bottom: 2px solid #fff;
-
-}
-.hero label {
-    color: #fff;
+    border-color: #fff;
 
 }
 
@@ -113,10 +118,66 @@ footer a {
     }
 }
 
-/* .row {
-        width: 100%;
-    }
+footer .row {
+    position: relative;
+}
 
-    .row-short {
-        width: 100%;
-    } */
+.back-to-top {
+    font-size: 2rem;
+    line-height: 1.8em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: absolute;
+    top: -1em;
+    right: -0.7em;
+    background-color: red;
+    text-align: center;
+    box-shadow: 0 0.2em 0.4 #0006;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .pomidoras {
+    border: 5px solid red;
+    position: relative;
+}
+.agurkas {
+    width: 6rem;
+    height: 6rem;
+    background-color: green;
+    /* align-self: flex-end; */
+    /* position: fixed; prikimba tiesiog prie ekrano turi savo atskira pozidcija */
+    /* position: absolute;
+    left: 0px;
+    bottom: 0px;
+    /* artimiausio ne statinio tevynio elemento adzvilgiu
+    visi iki vieno elementai default yra statiniai */
+
+    /* z-index: ; po elementu arba virs elementu ( -1; +1)*/
+/* }  */
+
+/* .sekla {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}   
+.s {
+    width: 1rem;
+    height: 1rem;
+    background: #03a9f5;
+    position: absolute;
+    right: 0;
+} */
