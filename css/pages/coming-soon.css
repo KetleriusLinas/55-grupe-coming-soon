@@ -8,6 +8,7 @@ html {
 
 .hero {
     background-image: url(../../img/hero-small.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -33,14 +34,14 @@ html {
 .hero .form-row {
     justify-content: center;
 }
+.hero label {
+    color: #fff;
+
+}
 .hero input {
     background-color: transparent;
     color: #fff;
-    border-bottom: 2px solid #fff;
-
-}
-.hero label {
-    color: #fff;
+    border-color: #fff;
 
 }
 
@@ -116,15 +117,6 @@ footer a {
         flex-direction: column;
     }
 }
-
-.row {
-        width: 100%;
-    }
-
-.row-short {
-        width: 100%;
-    }
-
 
 footer .row {
     position: relative;
