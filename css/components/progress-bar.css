@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 0.5rem;
 }
+
 .progress-bar .top {
     display: flex;
     justify-content: space-between;
@@ -10,12 +11,76 @@
     font-size: 1.2rem;
     color: #555;
 }
+
 .progress-bar .bottom {
     background-color: #ccc;
     height: 0.5rem;
 }
+
 .progress-bar .bar {
+    height: 100%;
+    width: 60%;
+}
+
+.progress-bar .value {
     background-color: blue;
     height: 100%;
-    width: 90%;
+    width: 100%;
+
+    animation-name: loading;
+    animation-duration: 2s;
+    /* animacija grizta i ta savo pradini, siuo metu i blue max bara */
+    animation-fill-mode: forwards;
 }
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* animation-name: loading1;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+     */
+/* .progress-bar:nth-last-of-type(2) .bar{
+    animation-name: loading2;
+}
+.progress-bar:nth-last-of-type(3) .bar{
+    animation-name: loading3;
+} */
+
+
+/* @keyframes loading1 {
+    0% {
+        width: 0;;
+    }
+    100% {
+        width: 90%;
+    }
+} */
+/* @keyframes loading2 {
+    0% {
+        width: 0;;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes loading3 {
+    0% {
+        width: 0;;
+    }
+    100% {
+        width: 55%;
+    }
+} */
