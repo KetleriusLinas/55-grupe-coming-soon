@@ -3,7 +3,7 @@ html {
 }
 
 .bg-blue {
-    background-color: #03a9f5;
+    background-color: var(--color-primary);
 }
 
 .hero {
@@ -34,10 +34,12 @@ html {
 .hero .form-row {
     justify-content: center;
 }
+
 .hero label {
     color: #fff;
 
 }
+
 .hero input {
     background-color: transparent;
     color: #fff;
@@ -61,7 +63,7 @@ html {
 }
 
 .section-description>a {
-    color: #EB1e61;
+    color: var(--color-secondary);
     text-decoration: none;
 }
 
@@ -104,7 +106,7 @@ footer a {
 
 .socials a:hover {
     background-color: #fff;
-    color: blue;
+    color: var(--color-primary);
 }
 
 .text-trio {
@@ -112,9 +114,32 @@ footer a {
     gap: 0 30px
 }
 
+.text-trio p {
+    position: relative;
+}
+
+.text-trio p::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(50%, -50%)
+}
+
+.text-trio p:last-child::after {
+    display: none;
+}
+
 @media (max-width: 700px) {
     .text-trio {
         flex-direction: column;
+    }
+    .text-trio p::affer {
+        display: none;
     }
 }
 
@@ -156,14 +181,14 @@ footer .row {
     height: 6rem;
     background-color: green;
     /* align-self: flex-end; */
-    /* position: fixed; prikimba tiesiog prie ekrano turi savo atskira pozidcija */
-    /* position: absolute;
+/* position: fixed; prikimba tiesiog prie ekrano turi savo atskira pozidcija */
+/* position: absolute;
     left: 0px;
     bottom: 0px;
     /* artimiausio ne statinio tevynio elemento adzvilgiu
     visi iki vieno elementai default yra statiniai */
 
-    /* z-index: ; po elementu arba virs elementu ( -1; +1)*/
+/* z-index: ; po elementu arba virs elementu ( -1; +1)*/
 /* }  */
 
 /* .sekla {

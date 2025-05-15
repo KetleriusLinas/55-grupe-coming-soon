@@ -63,7 +63,7 @@
     font-size: 1rem;
     line-height: 1em;
     padding: 1em;
-    background-color: #EB1e61;
+    background-color: var(--color-secondary);
     border: none;
     color: #fff;
     box-shadow: 0 0.2em 0.4em #0006;
