@@ -3,7 +3,7 @@ html {
 }
 
 .bg-blue {
-    background-color: #03a9f5;
+    background-color: var(--color-primary);
 }
 
 .hero {
@@ -63,7 +63,7 @@ html {
 }
 
 .section-description>a {
-    color: #EB1e61;
+    color: var(--color-secondary);
     text-decoration: none;
 }
 
@@ -106,7 +106,7 @@ footer a {
 
 .socials a:hover {
     background-color: #fff;
-    color: blue;
+    color: var(--color-primary);
 }
 
 .text-trio {
